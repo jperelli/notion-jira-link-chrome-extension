@@ -1,0 +1,42 @@
+.notion-link-token {
+  position: relative;
+}
+.notion-link-token > span:nth-child(2) {
+  display: none;
+}
+
+.NJL {
+  font-size: 14px;
+  left: 0;
+  white-space: nowrap;
+  padding: 3px;
+
+  border-radius: 3px;
+  color: rgb(0, 82, 204);
+  /* background-color: white; */
+  box-shadow: rgb(9 30 66 / 25%) 0px 1px 1px, rgb(9 30 66 / 13%) 0px 0px 1px 1px;
+}
+
+.NJL-icon {
+  vertical-align: middle;
+  margin: 0 3px 0 0px;
+}
+
+.NJL-text::before {
+  content: attr(data-content);
+}
+
+.NJL-status {
+  margin: 0px 4px;
+  font-weight: 600;
+  border-radius: 3px;
+  background-color: rgb(222, 235, 255);
+  padding: 0px 4px;
+  font-size: 11px;
+  display: inline-block;
+  vertical-align: text-bottom;
+  text-transform: uppercase;
+}
+.NJL-status::before {
+  content: attr(data-content);
+}

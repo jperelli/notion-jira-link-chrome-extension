@@ -1,0 +1,44 @@
+{
+    "name": "Notion jira links",
+    "version": "1.0.0",
+    "description": "Makes jira links in notion appear as in confluence",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "src/popup.html",
+        "default_title": "Notion jira links"
+    },
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
+    "host_permissions": [
+        "https://*.notion.so/*",
+        "https://*.atlassian.net/",
+        "https://*.jira.com/",
+        "http://*.atlassian.net/",
+        "http://*.jira.com/"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.notion.so/*"
+            ],
+            "js": [
+                "src/content.js"
+            ],
+            "css": [
+                "src/content.css"
+            ],
+            "run_at": "document_idle"
+        }
+    ],
+    "background": {
+        "service_worker": "background-wrapper.js"
+    },
+    "icons": {
+        "16": "/assets/icon16.png",
+        "32": "/assets/icon32.png",
+        "48": "/assets/icon48.png",
+        "128": "/assets/icon128.png"
+    }
+}
