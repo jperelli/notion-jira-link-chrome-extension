@@ -2,7 +2,7 @@
 
 Chrome Extension to show information of a jira link that is posted in notion
 
-Install it from here: **PENDING CHROME EXTENSION APPROVAL**
+Install it from here: https://chrome.google.com/webstore/detail/notion-jira-links/blfhkboapfnblaoflpajppaofdjjnpdi
 
 ![demo](./assets/demo.png)
 
